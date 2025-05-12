@@ -1,0 +1,159 @@
+/* style.css - External Stylesheet - Slide 27 */
+
+/* Áp dụng chung cho body */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Slide 26: font-size (implicit font-family) */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Slide 20 (styles.css .modern): background */
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1); /* Slide 26 (to-do-list.css): box-shadow */
+}
+
+/* Định dạng cho các tiêu đề - Slide 26: ví dụ h1 */
+h1 {
+    color: navy; /* Slide 26: color */
+    text-align: center;
+    font-size: 2.5em; /* Slide 26: font-size, Slide 31: font-size (em) */
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: darkgreen;
+    font-size: 2em;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #555555;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+    color: #777777;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Siêu liên kết */
+a {
+    color: #0066cc;
+    text-decoration: none; /* Bỏ gạch chân mặc định */
+}
+
+a:hover {
+    color: #004C99;
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Hình ảnh */
+.sample-image {
+    display: block;
+    margin: 15px auto;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    border-radius: 5px; /* Thêm chút bo góc cho đẹp */
+}
+
+/* Slide 16: Unordered list type 'none' (minh họa thêm) */
+ul.no-bullets {
+    list-style-type: none;
+    padding-left: 0; /* Bỏ padding mặc định nếu dùng list-style-type: none */
+}
+
+/* Block, Inline, Inline-Block Elements - Slides 34, 35, 36 */
+.block-element {
+    display: block; /* Slide 34 */
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid blue;
+    text-align: center; /* Slide 30: text-align */
+}
+
+.inline-element {
+    display: inline; /* Slide 35 */
+    background-color: lightyellow;
+    padding: 3px 6px; /* Slide 31: padding */
+    border: 1px solid orange;
+    color: #555; /* Slide 31: color */
+}
+
+.inline-block-container {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center; /* Để căn giữa các inline-block items */
+}
+
+.inline-block-element {
+    display: inline-block; /* Slide 36 */
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid darkgray;
+    text-align: center;
+}
+
+
+/* CSS cho "Problem: To Do List" - Slides 28-30 */
+.my-list {
+  margin: 30px auto; /* Slide 25: margin: 0 auto */
+  padding: 15px 25px; /* Slide 25: padding */
+  width: 60%; /* Slide 25: width */
+  max-width: 500px;
+  font-size: 18px; /* Slide 25: font-size (điều chỉnh từ 30px) */
+  border: 1px solid #f7f381; /* Slide 25: border */
+  background: #f7f381; /* Slide 25: background */
+  box-shadow: 0 0 10px 2px #aaaaaa; /* Slide 26: box-shadow */
+  border-radius: 8px;
+}
+
+.my-list h1 { /* Áp dụng riêng cho h1 trong .my-list */
+  font-size: 1.8em; /* Ghi đè font-size h1 chung */
+  color: #333;
+  text-align: center; /* Slide 25: text-align: center (cho p) */
+  margin-bottom: 10px;
+  border-bottom: none; /* Ghi đè border-bottom của h2/h1 chung */
+}
+
+.my-list p { /* Áp dụng cho p trong .my-list */
+  text-align: center; /* Slide 25 */
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.my-list ol { /* Áp dụng cho ol trong .my-list */
+  margin: 12px auto; /* Slide 24: margin */
+  padding-left: 40px; /* Thụt lề cho số thứ tự */
+}
+
+.my-list ol li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+}
+.my-list ol li:last-child {
+    border-bottom: none;
+}
+
+/* Ví dụ .special class từ slide 27 */
+.special {
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+}

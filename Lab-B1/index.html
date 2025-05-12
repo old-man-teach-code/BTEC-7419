@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trang HTML & CSS Toàn Diện</title>
+    <style>
+        /* Định nghĩa một class màu đỏ cho phần tử bất kỳ */
+        .embedded-red-text {
+            color: red;
+            font-style: italic;
+        }
+
+        /* Định dạng cho phần tử có id="local-target" */
+        #local-target {
+            background-color: #f0f8ff;
+            /* AliceBlue */
+            padding: 5px;
+            border: 1px dashed blue;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>HTML & CSS Demo Toàn Diện (H1)</h1>
+        <h2>Giới Thiệu (H2)</h2>
+        <p> Trang này minh họa các khái niệm HTML và CSS từ bài giảng.
+            Sử dụng thẻ <strong>&lt;strong&gt;</strong> để nhấn mạnh. Chúng ta sẽ xuống dòng bằng thẻ &lt;br /&gt;
+            <br /> Đây là dòng sau khi sử dụng &lt;br /&gt;.
+        </p>
+        <h3>Các Mục Chính (H3)</h3>
+        <h4>Mục Nhỏ Hơn (H4)</h4>
+        <h5>Mục Rất Nhỏ (H5)</h5>
+        <h6>Mục Nhỏ Nhất (H6)</h6>
+
+        <section id="hyperlinks-section">
+            <h2>Siêu Liên Kết (Hyperlinks)</h2>
+            <ul>
+                <li>
+                    <a href="https://www.google.com" target="_blank">
+                        Liên kết ngoài đến Google (mở tab mới)
+                    </a>
+                </li>
+                <li>
+                    <a href="#local-target">
+                        Liên kết nội bộ đến phần "Mục tiêu nội bộ" bên dưới
+                    </a>
+                </li>
+                <li>
+                    <a href="style.css">
+                        Liên kết tương đối đến file style.css
+                    </a>
+                    (Xem ví dụ như <a href="../some-other-file.html">liên kết đến thư mục cha</a>)
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hình Ảnh (Images)</h2>
+            <p>Hình ảnh từ file ngoài:</p>
+            <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Nhà Trulli ở Ý" width="200" height="150"
+                class="sample-image">
+            <p>Hình ảnh nhúng (Embedded image - Data URI - Slide 13):</p>
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP8AAAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="Ảnh GIF đỏ 1x1 pixel nhúng">
+            <p class="fruits-example"> <img src="https://via.placeholder.com/50/FF0000/FFFFFF?Text=Táo" alt="Táo"
+                    style="margin:5px;"> <img src="https://via.placeholder.com/50/FFFF00/000000?Text=Chuối" alt="Chuối"
+                    style="margin:5px;">
+                <img src="https://via.placeholder.com/50/008000/FFFFFF?Text=Kiwi" alt="Kiwi" style="margin:5px;">
+            </p>
+        </section>
+
+        <section>
+            <h2>Các Loại Danh Sách</h2>
+            <h3>Danh sách có thứ tự (Ordered List - Slide 15)</h3>
+            <ol type="I">
+                <li>Mục I</li>
+                <li>Mục II
+                    <ol type="a" style="background-color: #f9f9f9; padding: 5px;">
+                        <li>Mục con a</li>
+                        <li>Mục con b</li>
+                    </ol>
+                </li>
+                <li>Mục III</li>
+            </ol>
+
+            <h3>Danh sách không có thứ tự (Unordered List - Slide 16)</h3>
+            <ul type="square">
+                <li>Mục vuông 1</li>
+                <li>Mục vuông 2
+                    <ul type="circle">
+                        <li>Mục tròn con 1</li>
+                        <li>Mục tròn con 2</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Danh sách định nghĩa (Definition List - Slide 17)</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - Ngôn ngữ đánh dấu siêu văn bản.</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - Các biểu định kiểu theo tầng.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Multimedia</h2>
+            <h3>Audio (Slide 21)</h3>
+            <p>Ví dụ thẻ audio (cần file âm thanh thực tế):</p>
+            <audio controls autoplay loop preload="auto">
+                <source src="horse.mp3" type="audio/mpeg">
+                <source src="horse.ogg" type="audio/ogg">
+                Trình duyệt của bạn không hỗ trợ phần tử audio.
+            </audio>
+
+            <h3>Video (Slide 22)</h3>
+            <p>Ví dụ thẻ video (cần file video thực tế):</p>
+            <video width="320" height="240" controls
+                poster="https://via.placeholder.com/320x240/CCCCCC/000000?Text=Video+Poster" loop>
+                <source src="shuttle.mp4" type="video/mp4">
+                <source src="shuttle.ogg" type="video/ogg">
+                Trình duyệt của bạn không hỗ trợ video HTML5.
+            </video>
+        </section>
+
+        <section>
+            <h2>Các Phần Tử HTML Khác (Slide 2)</h2>
+            <p>
+                Thẻ &lt;input&gt; (ví dụ đơn giản): <input type="text" placeholder="Nhập văn bản...">
+            </p>
+            <p>
+                Thẻ &lt;button&gt;: <button type="button">Nhấn vào đây</button>
+            </p>
+            <p>
+                Thẻ &lt;script&gt; thường dùng cho JavaScript và đặt ở cuối &lt;body&gt; hoặc trong &lt;head&gt;.
+                (Ví dụ script được comment để không chạy khi tải trang)
+            </p>
+        </section>
+
+        <section>
+            <h2>Block, Inline, và Inline-Block Elements</h2>
+            <div class="block-element">
+                Đây là một <strong>&lt;div&gt;</strong> (phần tử block). Nó chiếm toàn bộ chiều rộng.
+            </div>
+            <p class="block-element" style="background-color: lightgreen;"> Đây là một <strong>&lt;p&gt;</strong> (cũng
+                là phần tử block).
+            </p>
+
+            <p>
+                Đây là văn bản với một <span class="inline-element">phần tử &lt;span&gt; (inline)</span>.
+                Nó chỉ chiếm không gian cần thiết.
+                <span class="embedded-red-text">Đoạn này áp dụng CSS nhúng.</span>
+            </p>
+
+            <div class="inline-block-container">
+                <div class="inline-block-element" style="background-color: lightcoral;">Khối Inline-Block 1</div>
+                <div class="inline-block-element" style="background-color: lightseagreen;">Khối Inline-Block 2</div>
+                <span class="inline-block-element" style="background-color: mediumpurple; color:white;">Span
+                    Inline-Block</span>
+            </div>
+        </section>
+
+        <h2 id="local-target">Mục tiêu nội bộ (Local Target)</h2>
+        <p>Đây là phần nội dung được liên kết đến từ mục "Siêu Liên Kết".</p>
+
+        <div class="my-list">
+            <h1>Danh sách việc cần làm hôm nay</h1>
+            <p>Thứ Hai, 12 tháng 5, 2025</p>
+            <ol>
+                <li>Hoàn thành ví dụ HTML/CSS</li>
+                <li>Kiểm tra lại các yêu cầu</li>
+                <li>Uống cà phê</li>
+            </ol>
+        </div>
+
+    </div>
+</body>
+
+</html>
